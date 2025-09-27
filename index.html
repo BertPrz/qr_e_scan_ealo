@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>QR E-Scan-Ealo | Escáner QR rápido y seguro</title>
+  <meta name="description" content="Escanea códigos QR al instante. Guarda ubicaciones, sin datos personales. Con anuncios no intrusivos." />
+  <style>
+    /* Reset y base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.7;
+      color: #333;
+      background-color: #f8f9fa;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    /* Header */
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(135deg, #1a73e8, #4285f4);
+      color: white;
+      border-radius: 10px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    header p {
+      font-size: 1.2rem;
+      opacity: 0.9;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    /* Secciones */
+    section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    section h2 {
+      color: #1a73e8;
+      margin-bottom: 15px;
+      font-size: 1.6rem;
+    }
+    ul {
+      padding-left: 20px;
+      margin: 15px 0;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+
+    /* Cómo funciona */
+    .steps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+    .step {
+      background: #f1f8ff;
+      padding: 15px;
+      width: 100%;
+      max-width: 220px;
+      border-radius: 8px;
+      text-align: center;
+      border: 1px solid #d0e3ff;
+    }
+    .step-number {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      background: #1a73e8;
+      color: white;
+      border-radius: 50%;
+      line-height: 36px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    /* Descarga */
+    .download {
+      text-align: center;
+      padding: 30px;
+    }
+    .download-button {
+      display: inline-block;
+      background: #1a73e8;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 50px;
+      margin-top: 10px;
+      box-shadow: 0 4px 14px rgba(26, 115, 232, 0.3);
+      transition: all 0.3s;
+    }
+    .download-button:hover {
+      background: #0d62c9;
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #666;
+      font-size: 0.9rem;
+    }
+    footer a {
+      color: #1a73e8;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+      header p {
+        font-size: 1rem;
+      }
+      .step {
+        min-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <h1>QR E-Scan-Ealo</h1>
+      <p>El escáner QR rápido, fácil y seguro para tu día a día</p>
+    </header>
+
+    <!-- Descripción -->
+    <section>
+      <h2>¿Qué es QR E-Scan-Ealo?</h2>
+      <p>Una app simple y eficiente para escanear cualquier código QR en segundos. Ideal para menús digitales, enlaces rápidos, WiFi, contactos y mucho más.</p>
+      <p>Funciona completamente en tu dispositivo: <strong>no recopilamos tus datos personales</strong>.</p>
+    </section>
+
+    <!-- Características -->
+    <section>
+      <h2>✨ Características</h2>
+      <ul>
+        <li>✅ Escaneo rápido y preciso con la cámara</li>
+        <li>✅ Historial de códigos escaneados (opcional)</li>
+        <li>✅ Guarda la ubicación del lugar donde escaneaste (ej: un restaurante)</li>
+        <li>✅ Interfaz limpia y sin complicaciones</li>
+        <li>✅ Funciona sin conexión para lectura básica</li>
+        <li>✅ Anuncios no intrusivos (mantenemos la app gratuita)</li>
+      </ul>
+    </section>
+
+    <!-- Cómo funciona -->
+    <section>
+      <h2>🔍 Cómo usarlo</h2>
+      <div class="steps">
+        <div class="step">
+          <span class="step-number">1</span>
+          <h3>Abre la app</h3>
+          <p>Lanza QR E-Scan-Ealo desde tu teléfono.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">2</span>
+          <h3>Apunta al QR</h3>
+          <p>Enfoca el código con la cámara.</p>
+        </div>
+        <div class="step">
+          <span class="step-number">3</span>
+          <h3>Listo!</h3>
+          <p>La app abre el enlace o te permite guardarlo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacidad -->
+    <section>
+      <h2>🔒 Tu privacidad es importante</h2>
+      <p>No almacenamos ni compartimos tus datos personales. Todo se queda en tu dispositivo.</p>
+      <p>Usamos anuncios de Google AdMob para mantener la app gratuita. Puedes desactivar la personalización en <a href="https://adssettings.google.com" target="_blank">tus ajustes de Google</a>.</p>
+      <p><a href="https://bertprz.github.io/qr_e_scan_ealo/privacy_policy.html" target="_blank">Ver Política de Privacidad</a></p>
+    </section>
+
+    <!-- Descargar -->
+    <section class="download">
+      <h2>📲 Disponible en Google Play</h2>
+      <p>Descarga ahora y empieza a escanear QR al instante.</p>
+      <a href="https://play.google.com/store/apps/details?id=com.tuempresa.qrscan" class="download-button" target="_blank">
+        Descargar en Google Play
+      </a>
+      <p style="margin-top: 15px; font-size: 0.9em; color: #777;">
+        Nota: Reemplaza el enlace con el URL real de tu app cuando esté publicada.
+      </p>
+    </section>
+
+    <!-- Contacto -->
+    <footer>
+      <p>Desarrollado con ❤️ por QR E-Scan-Ealo</p>
+      <p>Preguntas? <a href="mailto:rowert28@hotmail.com">Contáctanos</a> | 
+      <a href="https://bertprz.github.io/qr_e_scan_ealo/privacy_policy.html" target="_blank">Política de Privacidad</a></p>
+      <p>© 2025 QR E-Scan-Ealo. Todos los derechos reservados.</p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
